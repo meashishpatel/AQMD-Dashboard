@@ -21,7 +21,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     fetchData();
-    const interval = setInterval(fetchData, 3600000); // Update every hour
+    const interval = setInterval(fetchData, 3); // Update every hour
     return () => clearInterval(interval);
   }, []);
 
