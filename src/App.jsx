@@ -5,9 +5,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 const App = () => {
   return (
     <div>
-      <ErrorBoundary>
-        <Dashboard />
-      </ErrorBoundary>
+      <h1>hell</h1>
     </div>
   );
 };
