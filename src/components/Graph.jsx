@@ -3,7 +3,7 @@ import { Line } from "react-chartjs-2";
 
 const Graph = ({ title, data }) => {
   const chartData = {
-    labels: data.map((entry) => entry.time), // Time on x-axis
+    labels: data.map((entry) => entry.time), // Adjusted time on x-axis
     datasets: [
       {
         label: title,
@@ -30,7 +30,6 @@ const Graph = ({ title, data }) => {
   return (
     <div className="graph">
       <Line data={chartData} options={options} />
-      <h3>{title}</h3>
     </div>
   );
 };
